@@ -168,6 +168,14 @@ div.video > iframe {
     height: 90%;
 }
 
+div.fotos {
+    background-color: var(--cor5);
+    width: 300px;
+    padding: 10px;
+    display: block;
+    margin: auto;
+}
+
 img.patch {
     width: 50%;
 }
