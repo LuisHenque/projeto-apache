@@ -8,11 +8,6 @@
 }
 
 :root {
-    /*--cor0: #F2AF5C;
-    --cor1: #F29C50;
-    --cor2: #D7D7D9;
-    --cor3: #514F59;
-    --cor4: #0D0D0D;*/
     --cor0: #A3A2A0;
     --cor1: #998363;
     --cor2: #b87b27;
@@ -94,7 +89,7 @@ a.externo::after {
 }
 
 img.logo {
-    width: 100px;
+    width: 90px;
     margin-top: -100px;
     display: block;
     margin-left: auto;
