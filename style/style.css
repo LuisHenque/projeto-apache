@@ -176,6 +176,10 @@ div.fotos {
     margin: auto;
 }
 
+p.pcent {
+    text-align: center;
+}
+
 img.patch {
     width: 50%;
 }
