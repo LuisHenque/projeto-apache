@@ -6,19 +6,22 @@
     <title>Apache Airsoft Bsb</title>
     <link rel="shortcut icon" href="_imagens/logo_apache_png.png" type="image/x-icon">
     <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 <body>
     <header>
         <h1>Apache Airsoft Bsb</h1>
     </header>
-    
     <nav>
-        <a href="index.html">Home</a>
-        <a href="fotos.html">Fotos</a>
-        <a href="#">Vídeos</a>
-        <a href="">Operadores</a>
-        <a href="">Contato</a>
-        <a href="">Regras do Airsoft</a>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="menuitens">
+            <a href="index.html">Home</a>
+            <a href="fotos.html">Fotos</a>
+            <a href="videos.html">Vídeos</a>
+            <a href="">Operadores</a>
+            <a href="">Contato</a>
+            <a href="">Regras do Airsoft</a>
+        </menu>
     </nav>
     <img src="imagens/logo_apache_png.png" alt="Logo Apache" class="logo">
     <main>
@@ -55,7 +58,14 @@
         <p>Copyright © - by Apache Airsoft</p>
         <p><a href="https://www.instagram.com/apacheairsoftbsb/" target="_blank">Instagram</a> | <a href="https://www.youtube.com/watch?v=1k4mxDc3lzI&t=455s" target="_blank">Youtube</a></p>
     </footer>
-
-    
+    <script>
+        function clickMenu(){
+            if (menuitens.style.display == 'block') {
+                menuitens.style.display = 'none'
+            } else {
+                menuitens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
