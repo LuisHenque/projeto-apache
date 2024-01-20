@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apache Airsoft Bsb</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/mediaq.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Apache Airsoft Bsb</h1>
     </header>
@@ -75,6 +76,13 @@
         <p><a href="https://www.instagram.com/apacheairsoftbsb/" target="_blank">Instagram</a> | <a href="https://www.youtube.com/watch?v=1k4mxDc3lzI&t=455s" target="_blank">Youtube</a></p>
     </footer>
     <script>
+        function mudouTamanho () {
+            if (window.innerWidth >= 768) {
+                menuitens.style.display = "block"
+            } else {
+                menuitens.style.display = 'none'
+            }
+        }
         function clickMenu(){
             if (menuitens.style.display == 'block') {
                 menuitens.style.display = 'none'
