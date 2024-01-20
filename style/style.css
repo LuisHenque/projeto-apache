@@ -29,7 +29,7 @@ header {
     background-image: linear-gradient(to bottom, var(--cor0), var(--cor5));
     min-height: 70px;
     text-align: center;
-    padding-top: 40px;
+    padding-top: 50px;
     
 }
 
@@ -42,45 +42,38 @@ header > h1 {
     text-shadow: 3px 5px 7px rgba(0, 0, 0, 0.445);
 }
 
-header > P { 
-    font-family: var(--fonte-bebas);
-    font-size: 1.2em;
-    color: white;
-    max-width: 600px;
-    margin: auto;
-    margin-bottom: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    text-shadow: 3px 5px 7px rgba(0, 0, 0, 0.445);
-}
 
 #burguer {
     color: var(--cor0);
-    display: block;
-    background-color: var(--cor5);
-    text-align: center;
     cursor: pointer;
+    background-color: var(--cor5);
+    display: block;
+    padding-bottom: 10px;
 }
 
 
 nav {
     background-color: var(--cor5);
-    padding: 10px;
+    padding: 15px;
+    height: auto;
 }
 
-nav > ul > li > a {
+nav a {
+    border-radius: 7px;
     color: var(--cor0);
     font-weight: bold;
-    padding: 10px;
+    padding: 8px;
     text-decoration: none;
-    border-radius: 7px;
     transition-duration: 0.5s;
-    display: none;
 }
 
 nav a:hover {
     background-color: var(--cor4);
     color: var(--cor0);
+}
+
+menu {
+    display: none;
 }
 
 body {
@@ -104,9 +97,11 @@ img.logo {
 }
 main {
     background-color: white;
+    border-radius: 10px;
     min-width: auto;
     max-width: 1000px;
     margin: auto;
+    margin-top: 20px;
     padding: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.451);
 }
@@ -117,13 +112,15 @@ main h1 {
 }
 
 main h2 {
-    color: var(--cor5);
+    border-radius: 8px;
     background-image: linear-gradient(to right, var(--cor1), transparent);
+    color: var(--cor5);
     font-family: var(--fonte-bebas);
     font-size: 1.3em;
     text-indent: 8px;
     margin-top: 10px;
     margin-bottom: 10px;
+    padding: 5px;
 }
 
 main h3 {
