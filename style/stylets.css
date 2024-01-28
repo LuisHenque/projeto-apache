@@ -42,21 +42,21 @@ header > input {
     border-radius: 5px;
     padding: 10px;
     position: absolute;
-    top: 22px;
+    top: 17px;
     width: 150px;
 }
 
 header > span {
     position: absolute;
     right: 35px;
-    top: 20px;
+    top: 15px;
 }
 
 header > p {
     font-size: 0.6em;
     position: absolute;
     right: 10px;
-    top: 45px;
+    top: 40px;
 }
 
 
