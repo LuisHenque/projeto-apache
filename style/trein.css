@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+* {
+    font-family: 'Sora', Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.interface {
+    max-width: 70vw;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #000;
+    width: 100%;
+}
+
+.top-header {
+    background-color: #fff;
+    padding: 20px 4%;
+}
+
+.top-header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-header .logotipo img {
+    max-width: 150px;
+}
+
+.top-header .btn-header button {
+    background-color: transparent;
+    border: 1px solid #000;
+    border-radius: 50%;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+}
+
+.top-header .btn-header button a{
+    color: #000;
+}
