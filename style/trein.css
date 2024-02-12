@@ -3,25 +3,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 
 * {
+    box-sizing: border-box;
     font-family: 'Sora', Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 .interface {
-    max-width: 100vw;
+    max-width: 80vw;
     margin: 0 auto;
 }
 
 header {
-    background-color: #000;
+    background-color: #f2f2f2;
     width: 100%;
 }
 
 .top-header {
     background-color: #fff;
-    padding: 10px 4%;
+    padding: 20px 4%;
 }
 
 .top-header > .interface {
@@ -30,11 +30,11 @@ header {
     justify-content: space-between;
 }
 
-.top-header .logotipo img {
+.interface .logotipo img {
     max-width: 150px;
 }
 
-.top-header .btn-header button {
+.interface .btn-header button {
     background-color: transparent;
     border: 1px solid #000;
     border-radius: 50%;
@@ -43,10 +43,40 @@ header {
     width: 50px;
 }
 
-.top-header .btn-header button a{
+.interface .btn-header button a {
     color: #000;
 }
 
-.top-header .btn-header button:hover {
-    background-color: bisque;
+.bottom-header nav ul {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.bottom-header nav ul li a {
+    color: #0B3954;
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.bottom-header nav ul li a:hover {
+    color: #5071d5;
+}
+
+.drop-hover {
+    position: relative;;
+}
+
+.drop-hover .drop {
+    background-color: #f2f2f2;
+    height: 0;
+    position: absolute;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.drop-hover:hover .drop {
+    height: 230px;
 }
