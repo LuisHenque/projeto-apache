@@ -23,6 +23,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 header {
@@ -38,7 +39,6 @@ header > h1 {
     font-family: var(--fonte-bebas);
     font-weight: normal;
     font-size: 3em;
-    margin-bottom: 20px;
     text-shadow: 3px 5px 7px rgba(0, 0, 0, 0.445);
 }
 
@@ -100,8 +100,8 @@ main {
     min-width: auto;
     max-width: 1000px;
     margin: auto;
-    margin-top: 20px;
-    padding: 20px;
+    margin-top: 10px;
+    padding: 20px 4%;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.451);
 }
 
