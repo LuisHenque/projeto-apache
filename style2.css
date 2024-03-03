@@ -38,7 +38,11 @@ body {
     margin: 0 auto;
 }
 
-header .btn-contato button {
+.flex {
+    display: flex;
+}
+
+.btn-contato button {
     background-color: var(--cor2);
     border: none;
     border-radius: 30px;
@@ -46,9 +50,10 @@ header .btn-contato button {
     font-size: 18px;
     font-weight: 400;
     padding: 10px 40px;
+    transition: .5s;
 }
 
-header .btn-contato button:hover {
+.btn-contato button:hover {
     box-shadow: 2px 2px 8px var(--cor5);
 }
 
@@ -83,4 +88,28 @@ header ul {
 header nav ul li {
     display: inline-block;
     padding: 0 40px;
+}
+
+/* Estilo Main */
+
+section.card {
+    padding: 40px 4%;
+}
+
+section.card .flex {
+    align-items: center;
+    gap: 60px;
+    justify-content: center;
+}
+
+.card {
+    color: var(--cor5);
+}
+
+.card h1 {
+    font-size: 40px;
+}
+
+section.card img {
+    border-radius: 30px;
 }
