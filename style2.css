@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'FonteLogo';
+    src: url(../fonts/bubblegum-sans-regular.otf) format('opentype');
+}
+
+:root {
+    --cor0: #A3A2A0;
+    --cor1: #998363;
+    --cor2: #b87b27;
+    --cor3: #966520;
+    --cor4: #85591C;
+    --cor5: #3b280d;
+    --fonte-padrao: Arial, Verdana, Helveticam sans-serif;
+    --fonte-bebas: 'Bebas Neue', cursive;
+    --fonte-destaque: 'FonteLogo', cursive;
+    
+}
+
+/* Estilo Geral */
+* {
+    box-sizing: border-box;
+    font-family: var(--fonte-bebas);
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor0);
+    height: 100vh;
+}
+
+.interface {
+    max-width: 90vw;
+    margin: 0 auto;
+}
+
+header .btn-contato button {
+    background-color: var(--cor2);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px 40px;
+}
+
+header .btn-contato button:hover {
+    box-shadow: 2px 2px 8px var(--cor5);
+}
+
+/* Estilo Header */
+
+header {
+    padding: 20px 4%;
+}
+
+header .interface {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+header a {
+    color: var(--cor5);
+    display: inline-block;
+    text-decoration: none;
+    transition: .5s;
+}
+
+header a:hover {
+    color: var(--cor3);
+    transform: scale(1.1);
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
