@@ -9,7 +9,7 @@
     margin: 0;
     padding: 0;
 }
-
+/* 
 .interface {
     max-width: 80vw;
     margin: 0 auto;
@@ -46,38 +46,79 @@ header {
 
 .interface .btn-header button a {
     color: #000;
+} */
+
+body {
+    background-image: url(../imagens/Wallpaper_2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
 }
 
-.bottom-header nav ul {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
+nav {
+    background-color: lightslategray;
+    text-align: center;
 }
 
-.bottom-header nav ul li a {
-    color: #0B3954;
-    display: block;
-    padding: 20px;
+nav ul {
+    display: inline-flex;
+    list-style: none;
+}
+
+nav ul li {
+    width: 120px;
+    margin: 10px;
+    padding: 10px;
+}
+
+nav ul li a {
+    color: #fff;
     text-decoration: none;
 }
 
-.bottom-header nav ul li a:hover {
-    color: #5071d5;
+.sub-menu-1 {
+    display: none;
 }
 
-.drop-hover {
-    position: relative;;
-}
-
-.drop-hover .drop {
-    background-color: #f2f2f2;
-    height: 0;
+nav ul li:hover .sub-menu-1 {
+    display: block;
     position: absolute;
-    overflow: hidden;
-    transition: .5s;
+    background-color: rgba(119, 136, 153, 0.589);
+    box-shadow: 2px 2px 8px lightslategray;
+    border-radius: 0px 0px 20px 0px;
+    margin-top: 10px;
+    margin-left: -25px;
 }
 
-.drop-hover:hover .drop {
-    height: 230px;
+nav ul li a:hover {
+    color: #daf106;
+}
+
+nav ul li:hover .sub-menu-1 ul {
+    display: block;
+}
+
+nav ul li:hover .sub-menu-1 ul li {
+    width: 120px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+nav ul li:hover .sub-menu-1 ul li:hover{
+    background-color: rgb(52, 59, 66);
+}
+
+.sub-menu-2 {
+    display: none;
+}
+
+nav ul li ul li:hover .sub-menu-2 {
+    background-color: rgba(119, 136, 153, 0.589);
+    box-shadow: 2px 2px 8px lightslategray;
+    display: block;
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 110px;
 }
