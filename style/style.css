@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 @font-face {
@@ -7,6 +9,21 @@
     src: url(../fonts/bubblegum-sans-regular.otf) format('opentype');
 }
 
+
+:root {
+    --cor0: #f2f2f2;
+    --cor1: #0B3954;
+    --cor2: #5071D5;
+    --cor3: #5C676D;
+    --cor4: #FFB128;
+    /* --cor5: #3b280d; */
+    --cor5: #5071D5;
+    --fonte-padrao: Arial, Verdana, Helveticam sans-serif;
+    --fonte-poppins: 'Poppins', sans-serif;
+    --fonte-sora: 'Sora', cursive;
+    --fonte-destaque: 'FonteLogo', cursive;   
+}
+/* 
 :root {
     --cor0: #A3A2A0;
     --cor1: #998363;
@@ -18,12 +35,45 @@
     --fonte-bebas: 'Bebas Neue', cursive;
     --fonte-destaque: 'FonteLogo', cursive;
     
-}
+} */
 
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    /* font-family: var(--fonte-poppins); */
+}
+
+.interface {
+    margin: 0 auto;
+    width: 80vw;
+}
+
+.img-logo img {
+    width: 100px;
+}
+
+.top-header .interface {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-header .btn-sociais button {
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 50%;
+    color: #fff;
+    font-size: 20px;
+    height: 40px;
+    transition: .8s;
+    width: 40px;
+}
+
+.top-header .btn-sociais button:hover {
+    background-color: #FFB128;
+    border: 1px solid #000;
+    color: #000
 }
 
 header {
@@ -34,10 +84,9 @@ header {
     
 }
 
-header > h1 {
+.top-header .titulo  h1 {
     color: white;
-    font-family: var(--fonte-bebas);
-    font-weight: normal;
+    font-family: var(--fonte-sora);
     font-size: 3em;
     text-shadow: 3px 5px 7px rgba(0, 0, 0, 0.445);
 }
@@ -112,8 +161,8 @@ main h1 {
 
 main h2 {
     border-radius: 8px;
-    background-image: linear-gradient(to right, var(--cor1), transparent);
-    color: var(--cor5);
+    background-image: linear-gradient(to right, var(--cor3), transparent);
+    color: var(--cor4);
     font-family: var(--fonte-bebas);
     font-size: 1.3em;
     text-indent: 8px;
