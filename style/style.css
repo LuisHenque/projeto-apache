@@ -117,8 +117,8 @@ nav a {
 }
 
 nav a:hover {
-    background-color: var(--cor4);
-    color: var(--cor0);
+    /* background-color: var(--cor4); */
+    color: var(--cor4);
 }
 
 menu {
@@ -161,8 +161,8 @@ main h1 {
 
 main h2 {
     border-radius: 8px;
-    background-image: linear-gradient(to right, var(--cor3), transparent);
-    color: var(--cor4);
+    background-image: linear-gradient(to right, var(--cor2), transparent);
+    color: var(--cor0);
     font-family: var(--fonte-bebas);
     font-size: 1.3em;
     text-indent: 8px;
