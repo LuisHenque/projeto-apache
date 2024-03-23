@@ -1,5 +1,57 @@
 @charset "UTF-8";
 
+@media print {
+    
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    .btn-social {display: block;}
+    .btn-menu-mobile {display: none;}
+    .menu-mobile {display: none;}
+    .menu-desk {display: block;}
+}
+
+@media screen and (min-width:992px) and (max-width: 1200px) {
+    .btn-social {display: block;}
+    .btn-menu-mobile {display: none;}
+    .menu-mobile {display: none;}
+    .menu-desk{display: block;}
+}
+
+@media screen and (min-width: 1200px) {
+    .btn-social {display: block;}
+    .btn-menu-mobile {display: none;}
+    .menu-mobile {display: none;}
+    .menu-desk {display: block;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+
 @media screen and (min-width: 768px) {
     #burguer {
         display: none;
@@ -7,8 +59,30 @@
     menu {
         display: block;
     }
+
+    .top-header .titulo  h1.pq {
+        display: none;
+    }
+
+    .top-header .titulo  h1.gd {
+        display: block;
+    }
+
+    .bottom-header nav {
+        display: block;
+    }
+
+    .menu-burguer button {
+        display: none;
+    }
+
+    .top-header .btn-sociais button {
+        display: inline-block;
+    }
 }
 
 @media screen and (min-width: 956px) {
-    
-}
+    .top-header .titulo h1 {
+        font-size: 3em;
+    }
+} */
